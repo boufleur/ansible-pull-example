@@ -8,5 +8,5 @@
       
   - name: show some facts
     debug:
-      msg: "{{ facts }}"
+      msg: "{{ ansible_facts }}"
     
