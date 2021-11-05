@@ -5,3 +5,8 @@
   - name: install example application
     debug:
       msg: 'hello world from play.yml'
+      
+  - name: show some facts
+    debug:
+      msg: {{ facts }}
+    
