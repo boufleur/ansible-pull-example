@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+  - name: install example application
+    debug:
+      msg: 'hello world from play.yml'
