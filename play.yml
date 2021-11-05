@@ -9,4 +9,7 @@
   - name: show some facts
     debug:
       msg: "{{ ansible_facts }}"
+  - name: what about some host_vars
+    debug:
+      msg: "{{ abc }}"
     
