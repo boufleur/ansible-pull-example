@@ -1,7 +1,4 @@
 ---
-- set_fact:
-  var_test: abc
-  
 - hosts: localhost
 
   tasks:
