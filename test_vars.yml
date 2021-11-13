@@ -1,13 +1,14 @@
 ---
 - name: set if x
-  set_fact:
+  import_playbook: local.yml
+  vars:
     var_a: abc
   when: x is defined and x == 'y'
   
-- name: set if not x
-  set_fact:
-    var_a: cde
+- name: set if x
+  import_playbook: local.yml
+  vars:
+    var_a: abc
   when: x is not defined
   
-- name: import playbook
-  import_playbook: local.yml
+
