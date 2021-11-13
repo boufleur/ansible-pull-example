@@ -8,3 +8,6 @@
   - name: print var_a
     debug:
       msg: "the value of var_a is {{ var_a | default('foobar') }}"
+  - name: print x
+    debug:
+      msg: "the value of x is {{ x | default('undefined') }}"
