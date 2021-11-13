@@ -5,3 +5,6 @@
   - name: install example application
     debug:
       msg: 'hello world'
+  - name: print var_a
+    debug:
+      msg: "the value of var_a is {{ var_a | default('foobar') }}"
