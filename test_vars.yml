@@ -3,12 +3,12 @@
   import_playbook: local.yml
   vars:
     var_a: abc
-  when: x is defined and x == 'y'
+  when: "(x is defined and x == 'y')"
   
 - name: set if x
   import_playbook: local.yml
   vars:
     var_a: abc
-  when: x is not defined
+  when: "(x is not defined)"
   
 
