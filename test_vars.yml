@@ -8,7 +8,7 @@
 - name: set if x
   import_playbook: local.yml
   vars:
-    var_a: abc
+    var_a: def
   when: "(x is not defined)"
   
 
