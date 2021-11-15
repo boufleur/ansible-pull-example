@@ -1,4 +1,6 @@
 ---
+- set_fact:
+    f1: abc
 - name: set if x
   import_playbook: local.yml
   vars:
